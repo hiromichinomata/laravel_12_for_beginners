@@ -1,0 +1,38 @@
+
+  GET|HEAD        / .............................................................................................. home › HomeController@index
+  GET|HEAD        about ................................................................................................................ about
+  GET|HEAD        article ............................................................................................................ article
+  GET|HEAD        categories ..................................................................... categories.index › CategoryController@index
+  POST            categories ..................................................................... categories.store › CategoryController@store
+  GET|HEAD        categories/create ............................................................ categories.create › CategoryController@create
+  GET|HEAD        categories/{category} ............................................................ categories.show › CategoryController@show
+  PUT|PATCH       categories/{category} ........................................................ categories.update › CategoryController@update
+  DELETE          categories/{category} ...................................................... categories.destroy › CategoryController@destroy
+  GET|HEAD        categories/{category}/edit ....................................................... categories.edit › CategoryController@edit
+  GET|HEAD        confirm-password ................................................ password.confirm › Auth\ConfirmablePasswordController@show
+  POST            confirm-password .................................................................. Auth\ConfirmablePasswordController@store
+  GET|HEAD        contact ............................................................................................................ contact
+  GET|HEAD        dashboard ........................................................................................................ dashboard
+  POST            email/verification-notification ..................... verification.send › Auth\EmailVerificationNotificationController@store
+  GET|HEAD        forgot-password ................................................. password.request › Auth\PasswordResetLinkController@create
+  POST            forgot-password .................................................... password.email › Auth\PasswordResetLinkController@store
+  GET|HEAD        login ................................................................... login › Auth\AuthenticatedSessionController@create
+  POST            login ............................................................................ Auth\AuthenticatedSessionController@store
+  POST            logout ................................................................ logout › Auth\AuthenticatedSessionController@destroy
+  PUT             password .................................................................. password.update › Auth\PasswordController@update
+  GET|HEAD        posts/{post} ............................................................................... post.show › PostController@show
+  GET|HEAD        profile .............................................................................. profile.edit › ProfileController@edit
+  PATCH           profile .......................................................................... profile.update › ProfileController@update
+  DELETE          profile ........................................................................ profile.destroy › ProfileController@destroy
+  GET|HEAD        register ................................................................... register › Auth\RegisteredUserController@create
+  POST            register ............................................................................... Auth\RegisteredUserController@store
+  POST            reset-password ........................................................... password.store › Auth\NewPasswordController@store
+  GET|HEAD        reset-password/{token} .................................................. password.reset › Auth\NewPasswordController@create
+  GET|HEAD        storage/{path} ............................................................................................... storage.local
+  GET|HEAD        up ......................................................................................................................... 
+  GET|HEAD        verify-email .................................................. verification.notice › Auth\EmailVerificationPromptController
+  GET|HEAD        verify-email/{id}/{hash} .................................................. verification.verify › Auth\VerifyEmailController
+  GET|HEAD        welcome .................................................................................................................... 
+
+                                                                                                                           Showing [34] routes
+
